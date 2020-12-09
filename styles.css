@@ -1,0 +1,476 @@
+body{
+    background-color: rgb(240, 240, 240);
+    margin: auto;
+}
+
+
+main{
+    margin: 5% 5% 0 5%;
+}
+
+.nomprenomphotocv{
+display: flex;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(227, 230, 255);
+}
+
+#divtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#divtitle p{
+    font-size: 3em;
+    margin-top: 0px;
+    margin-bottom: 0%;
+    font-family: 'Abril Fatface', Arial, Helvetica, sans-serif;
+}
+
+
+#divnav{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#divlogo{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo_header{
+    height: 6em;
+    width: 6em; 
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+nav li{
+   margin: 8%;
+}
+header nav ul a{
+    display: block;
+    border: solid 1px;
+    border-radius: 20px;
+    padding: 7px 20px;
+}
+
+nav ul a:link, :visited{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul a:hover{
+    background-color:rgb(196, 202, 255);
+}
+
+
+
+/* Page accueil content*/
+
+#main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+#presentation{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.paragraphe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 0px 20px;
+}
+
+
+#histoire{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+
+
+/* PAGE TEAM*/
+
+#team{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#teamun{
+display:flex;
+}
+
+#teamdeux{
+display:flex;
+}
+
+.member{
+    display:flex;
+    justify-items: center;
+    padding: 20px;
+    text-align: justify;
+    width: 47%;
+}
+
+.member a{
+    padding-right: 20px;
+}
+    
+
+
+/* CV */
+.nomprenomphotocv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+#cvpresentation{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding-right: 100px;
+    justify-items: center;
+}
+
+#cvcontent{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+#cvtable{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+#cvlist{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+aside{
+    width: 50%;
+}
+
+p, tr, td, li{
+    font-family: 'Castoro', Arial, Helvetica, sans-serif;
+}
+
+h1, h2{
+    font-family: 'Abril Fatface', Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+main section img{
+    width: 100%;
+}
+
+.PhotoProfil{
+    border-radius: 100px;
+    width:300px;
+    height: 300px;
+}
+
+
+
+.teampic{
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+}
+
+.indexpic{
+    height: 30%;
+    width: 45%;
+}
+
+table, td{
+    border: solid 1px black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+
+/* Footer */
+footer{
+    background-color:  rgba(207, 196, 171, 0.74);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.BoxProfilPhoto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-width: 35%;
+    margin-top: 2%;
+    padding-right: 25px ;
+    background-color: rgb(227, 230, 255);
+    border-radius: 0px 50px 50px 0px;
+}
+.LogoFooter{
+    margin-top: 0%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.LogoFooter img{
+    width: 10em;
+}
+.PhotoMail{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 0%;
+}
+.PhotoProfilFooter{
+    border-radius: 100px;
+    max-height: 100px;
+}
+.PhotoProfilFooter:hover{
+    border: 1px solid black;
+    box-shadow: 7px 0px 10px;
+}
+.reseau_logo{
+    margin-left: auto;
+    padding-right: 15px;
+}
+.BoxReseau{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(227, 230, 255);
+    border-radius: 0px 0px 15px 15px;
+    max-height: 45px;
+}
+.LogoReseau img{
+    margin:1%;
+    max-height: 25px;
+}
+footer p{
+    width: 100%;
+    text-align: center;
+}
+
+/*Taille d'écran inférieur ou égal à 768px*/
+
+@media screen and (max-width: 768px){
+    header{
+        width: 100%;
+        position: relative;
+        top: 0px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: rgb(227, 230, 255);
+    }
+    
+    #divtitle{
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+    
+    #divtitle p{
+
+        font-size: 1.5em;
+        word-break: none;
+        font-family: 'Abril Fatface', Arial, Helvetica, sans-serif;
+    }
+
+
+    
+    
+    #divnav{
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    #divlogo{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .logo_header{
+        height: 6em;
+        width: 6em; 
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    nav li{
+        margin: 8%;
+        }
+        
+    header nav ul a{
+        display: flex;
+        justify-content: center;
+        border: solid 1px;
+        border-radius: 20px;
+        text-align: center;
+    }
+    
+    nav ul a:link, :visited{
+        text-decoration: none;
+        color: black;
+    }
+    
+    nav ul a:hover{
+        background-color:rgb(196, 202, 255);
+    }
+
+    /* PAGE TEAM*/
+
+#team{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* #teamun{
+display:flex;
+}
+
+#teamdeux{
+display:flex;
+} */
+
+.member{
+    display:flex;
+    flex-direction: row;
+    justify-items: center;
+    width: auto;
+    text-align: justify;
+}
+
+.member a{
+    padding-right: 20px;
+}
+    
+    
+    footer{
+        background-color:  rgba(207, 196, 171, 0.74);
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .BoxProfilPhoto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        min-height: 240px;
+        min-width: 35%;
+        max-width: 240px;
+        margin-top: 2%;
+        padding-right: 25px ;
+        background-color: rgb(227, 230, 255);
+        border-radius: 0px 50px 50px 0px;
+    }
+    .LogoFooter{
+        margin-top: 0%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .LogoFooter img{
+        width: 10em;
+    }
+    .PhotoMail{
+        height: 50%;
+        display: flex;
+        align-items: center;
+        margin-top: 0%;
+    }
+    .PhotoProfilFooter{
+        border-radius: 100px;
+        max-height: 100px;
+    }
+    .PhotoProfilFooter:hover{
+        border: 1px solid black;
+        box-shadow: 7px 0px 10px;
+    }
+    .reseau_logo{
+        margin-left: auto;
+        padding-right: 15px;
+    }
+    .BoxReseau{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgb(227, 230, 255);
+        border-radius: 0px 0px 15px 15px;
+        max-height: 45px;
+    }
+    .LogoReseau img{
+        margin:1%;
+        max-height: 25px;
+    }
+    footer p{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*Taille d'écran inférieur ou égal à 455px*/
+@media screen and (max-width: 455px){
+
+.member{
+display:flex;
+flex-direction: column;
+}
+
+
+    
+    /*FOOTER*/    
+    .reseau_logo {
+        margin-left: 30px;
+    }   
+}
